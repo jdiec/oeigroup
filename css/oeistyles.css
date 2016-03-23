@@ -1,19 +1,68 @@
-nav.nav-pills{
-    font-family: 'Noto Sans', sans-serif; 
-    font-size: 11pt;
+.navbar-brand{
+    position: relative;
+    left: 100px;
+}
+
+.navbar-brand img{
+    display: inline-block;
+}
+
+.nav>li>a{
+    color: #909090;
+}
+
+.nav>li>a:hover{
+    color: #000000;
+}
+
+@media screen and (min-width:1000px){
+    .nav-pills{
+        float: right;
+        position: relative;
+        top: 20px;
+        right: 100px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .nav-pills{
+    float: right;
+    position: relative;
+    top: 20px;
+    right:0px;
+}
+}
+.nav-pills>li{
+    margin-right: 30px;    
 }
 
 .nav-pills>li>a{
-    margin-left: 20px;
-    color: #697b98;   
+    color: #909090;
+    transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+}
+
+.nav-pills>li.active>a, 
+    .nav-pills>li.active>a:focus, 
+    .nav-pills>li.active>a:hover, 
+    .nav-pills>li>a:hover{
+            background-color: #eee;
+            color: #000000;
+            transition-duration: 500ms;
+            -webkit-transition-duration: 500ms;
+            -moz-transition-duration: 500ms;
+            -o-transition-duration: 500ms;
 }
 
 .navbar-toggle .icon-bar{
-    color: #697b98; 
-  
+    background-color: #909090;
 }
 
+
+/*
 #divider{
     text-align: center;
     margin: auto;
-}
+}*/
