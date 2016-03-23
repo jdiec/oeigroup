@@ -1,8 +1,19 @@
 nav.nav-pills{
     font-family: 'Noto Sans', sans-serif; 
-    font-size:11pt;
+    font-size: 11pt;
 }
 
 .nav-pills>li>a{
     margin-left: 20px;
+    color: #697b98;   
+}
+
+.navbar-toggle .icon-bar{
+    color: #697b98; 
+  
+}
+
+#divider{
+    text-align: center;
+    margin: auto;
 }
