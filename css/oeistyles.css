@@ -1,0 +1,8 @@
+nav.nav-pills{
+    font-family: 'Noto Sans', sans-serif; 
+    font-size:11pt;
+}
+
+.nav-pills>li>a{
+    margin-left: 20px;
+}
