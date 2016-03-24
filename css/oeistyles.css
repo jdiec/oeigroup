@@ -68,8 +68,10 @@ html, body{
 /*    min-height: 100vh;*/
 }
 
-#about, #services{
+#about, #services, #network, #tracking, #contact{
     display: none;
+    background-color: aliceblue;
+    padding-bottom: 300px;
 }
 
 

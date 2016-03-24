@@ -38,16 +38,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span> 
                     </button>
-                    <a class="navbar-brand" href="#"><img src="img/oeilogo.png" height="50" width="50">    
+                    <a id="hometab" class="navbar-brand" href="#"><img src="img/oeilogo.png" height="50" width="50">    
                     <img src="img/oeilabel.jpg" height="25" width="120"></a>
                 </div>  
 <!--                <p style="padding:8px;"></p>-->
             <div class="collapse navbar-collapse nav-justified" id="myNavbar">
                 <ul class="nav nav-pills">
                     <li id="abouttab"><a href="#about" >About Us</a></li>
-                    <li id="servicestab"><a href="#">Services</a></li>
-                    <li id=""><a href="#portfolio" >Global Network</a></li>
-                    <li id=""><a href="#portfolio" >Tracking System</a></li>
+                    <li id="servicestab"><a href="#services">Services</a></li>
+                    <li id="networktab"><a href="#network" >Global Network</a></li>
+                    <li id="trackingtab"><a href="#tracking" >Tracking System</a></li>
                     <li id="contacttab"><a href="#contact" >Contact</a></li>
                 </ul>
             </div>
@@ -60,7 +60,7 @@
     
     <!--HOMEPAGE-->
         <!--Carousel-->
-    <header class="jumbotron row-header">
+    <header id="home" class="jumbotron row-header active">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-8">
@@ -109,6 +109,33 @@
     </div>
     
     
+    <div id="network" class="container">
+        <div class="row">
+            Network section
+        </div>
+    
+    </div>
+    
+    <div id="tracking" class="container">
+        <div class="row">
+            We are completely computerized. Our sophisticated computer 
+            system can track your shipments from point of origin to point 
+            of destination per your requirements. By: Letter of Credit Numbers, 
+            Bill of Lading Numbers, Container Numbers, Purchase Order Numbers, 
+            Style Numbers, Vendor Numbers or Whatever suits your needs.
+        </div>
+    
+    </div>
+    
+        <div id="contact" class="container">
+        <div class="row">
+            Contact section
+        </div>
+    
+    </div>
+    
+    
+    
 <script>
     
     $(document).ready(function(){
@@ -131,7 +158,7 @@
         });
     
     //NAVIGATION LINKS
-        $('.nav-pills li').click(function(){
+        $('.navbar-header a , .nav-pills li').click(function(){
             var id = $(this).attr('id');
             id = '#' + id.replace('tab','');
             $('.active').removeClass('active').hide();
