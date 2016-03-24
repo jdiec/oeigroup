@@ -75,6 +75,12 @@ html, body{
 }
 
 
+p{
+    font-size: 14pt;
+    color: #909090;
+}
+
+
 
 .floating-label-form-group {
     position: relative;
@@ -146,6 +152,17 @@ html, body{
     color: #e5eaee;
     border-color: #e5eaee;
     background-color: #5865c3;
+}
+
+
+#contact a{
+    text-decoration: none;
+    font-size:14pt; 
+    color:#909090;
+}
+
+#contact a:hover{
+    color: red;
 }
 
 
