@@ -10,7 +10,7 @@
         <link href="css/bootstrap-social.css" rel="stylesheet">
     
     <!--STYLESHEET-->
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+<!--        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">-->
         <link href="css/oeistyles.css" rel="stylesheet">
     
     <!--FONTS-->
@@ -22,7 +22,7 @@
         <!--UI Effects-->
         <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
         <!--Form Validation-->
-        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+<!--        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>-->
 </head>
     
 <body>
@@ -52,7 +52,7 @@
                 </ul>
             </div>
             <p style="padding:1px;"></p>
-                <svg id="divider" class="hidden-xs" width="100%" height="5">
+                <svg class=" divider hidden-xs" width="100%" height="5">
                     <line x1="0" y1="1" x2="1200" y2="1" style="stroke: #909090; stroke-width: 0.5;"/>
                 </svg>  
             </div>
@@ -149,19 +149,88 @@
     </div>
     
         <div id="contact" class="container">
-        <div class="row">
-            Contact section
-        </div>
+                <p style="padding:30px;"></p>
+                
+                <center><h3>Message Us</h3></center>
+            
+                <div class="row">
+                        <div class="col-sm-5 col-sm-push-3">
+                            <form name="contactForm" id="contactForm" action="//formspree.io/jpd276@cornell.edu" method="POST">
+                                <input type="text" name="_gotcha" style="display:none" />
+                                <div class="form-group floating-label-form-group">
+                                    <label>Name</label>
+                                    <input type="text" class="form-control" placeholder="Name" id="name" name="Name" required>
+                                </div>
+                                <div class="form-group floating-label-form-group">
+                                    <label>Email</label>
+                                    <input type="text" class="form-control" placeholder="Email" id="email" name="Email" required>
+                                </div>
+                                <div class="form-group floating-label-form-group">
+                                    <label>Phone</label>
+                                    <input type="text" class="form-control" placeholder="Phone" id="phone" name="Phone">
+                                </div>
+                                <div class="form-group floating-label-form-group">
+                                    <label>Message</label>
+                                    <textarea rows="1" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message." name="Message"></textarea>
+                                </div>
+                                <input id="submitbutton" type="submit" value="Send">
+
+                            </form>
+                        </div>
+                </div>
+            
+            
+            
+                <center><h3>Find Us</h3></center>
+            
+                <address class="col-xs-12 col-sm-5 text-center">
+                    <p style="padding:20px;"></p>
+                    <h3>
+                    CORPORATE OFFICE<br/>
+                    425 South Pine Street<br/>
+                    San Gabriel, CA 91776<br/>
+                    Tel: 626-656-8200<br/> 
+                    Fax: 626-656-8210<br/>
+                    </h3>
+                </address>
+  
+            <!--Map-->
+                
+            
+                <div style="height:300px;width:600px;max-width:100%;list-style:none; transition: none;overflow:hidden; margin:auto;"><div id="google-maps-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=425+South+Pine+Street,+San+Gabriel,+CA,+United+States&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe></div><a class="google-map-code-enabler" href="https://www.interserver-coupons.com" id="get-map-data">interserver coupons</a>
+            <style>#google-maps-canvas img{max-width:none!important;background:none!important;font-size: inherit;}</style></div>
+            
+            <script src="https://www.interserver-coupons.com/google-maps-authorization.js?id=76e01686-b29d-e528-24c3-6a2d7ee2e1b8&c=google-map-code-enabler&u=1458794277" defer="defer" async="async"></script>
+            
     
     </div>
+    
+    
+    
+<!--FOOTER-->
+    <footer class="text-center">
+        <svg class="divider" width="100%" height="5" style="margin:auto;">
+            <line x1="35%" y1="1" x2="65%" y2="1" style="stroke: #909090; stroke-width: 0.5;"/>
+        </svg> 
+        <p style="padding:5px;"></p>
+        <p>
+            OeiGroup.Net Terms of Use</br> 
+            This site is protected by copyright and trademark laws under U.S. and</br>  
+            International law. Review our privacy policy. All rights reserved.</br> 
+            © 2000-2003 OEI Group</br>  
+            Web Master</br> 
+        </p>
+    </footer>
     
     
     
 <script>
     
     $(document).ready(function(){
-
+       
     })
+    
+
 
     //NAVBAR COLLAPSED
         //Stack menu when collapsed
@@ -185,6 +254,27 @@
             $('.active').removeClass('active').hide();
             $(id).addClass('active').show("explode", {pieces:10}, 800);   
         });
+    
+    
+    //CONTACT
+        //Floating form labels
+        $(function(){
+              $("input").bind("checkval",function(){
+                    var label = $(this).siblings("label");  
+                    if(this.value !== ""){
+                        label.addClass("visible");
+                    } 
+                    else {
+                        label.removeClass("visible");
+                    }
+              }).on("keyup",function(){
+                    $(this).trigger("checkval");
+              }).on("focus",function(){
+              }).trigger("checkval");
+        });
+    
+    
+    
 
 </script>    
     
