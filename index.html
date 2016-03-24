@@ -28,7 +28,7 @@
 <body>
     
     <!--NAVIGATION BAR-->
-        <nav class="navbar navbar-fixed-top" role="navigation">
+        <nav class="navbar" role="navigation"> <!--navbar-fixed-top-->
             <div class="container">
                 <p style="padding:5px;"></p>
                 <div class="navbar-header">
@@ -45,7 +45,7 @@
             <div class="collapse navbar-collapse nav-justified" id="myNavbar">
                 <ul class="nav nav-pills">
                     <li id="abouttab"><a href="#about" >About Us</a></li>
-                    <li id="servicestab"><a href="#services">Services</a></li>
+                    <li id="servicestab"><a href="#">Services</a></li>
                     <li id=""><a href="#portfolio" >Global Network</a></li>
                     <li id=""><a href="#portfolio" >Tracking System</a></li>
                     <li id="contacttab"><a href="#contact" >Contact</a></li>
@@ -58,23 +58,84 @@
             </div>
         </nav>
     
+    <!--HOMEPAGE-->
+        <!--Carousel-->
+    <header class="jumbotron row-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8">
+                    <h1>Ristorante con Fusion</h1>
+                    <p style="padding:40px;"></p>
+                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+                </div>
+                <div class="col-xs-12 col-sm-2">
+                    <p style="padding:20px;"></p>
+                    <img src="img/logo.png" class="img-responsive">
+                </div>
+                <div class="col-xs-12 col-sm-2">
+                    <p style="padding:40px;"></p>
+                    <a type="button" class="btn btn-warning btn-block" data-toggle="modal" data-target="#reserveTableModal">Reserve a table</a>
+                </div>
+            </div>
+        </div>
+    </header>
     
+    
+    <!--ABOUT US-->
+    <div id="about" class="container">
+        <div class="row">
+            <h1>Corporate Philosophy</h1>
+            
+            We are dedicated to delivering the most comprehensive, 
+                innovative and personalized services of optimum quality and value.
+            
+            We recognize our staff as the single most valuable resource and encourage 
+                their contributions and teamwork, while promoting career  development 
+                and professionalism in everyone of them.
+
+            We are committed to comprehensive customer satisfaction to provide the company
+                with continuous growth, prosperity and long term stability to our clients 
+                and staff.
+        
+        </div>
+    </div>
+    
+    <!--SERVICES-->
+    <div id="services" class="container">
+        <div class="row">
+            Service section
+        </div>
+    
+    </div>
     
     
 <script>
+    
+    $(document).ready(function(){
+
+    })
 
     //NAVBAR COLLAPSED
         //Stack menu when collapsed
         $('#myNavbar').on('show.bs.collapse', function() {
                     $('.nav-pills').addClass('nav-stacked').css('width','100%');
-                    $(".navbar").css("background-color", "#909090");
-                    $(".nav>li>a").css("color", "#FFFFFF");
-                    $(".navbar-toggle .icon-bar").css("background-color", "#FFFFFF");
+                    $('.nav-pills').addClass('text-center');
+                    //$(".navbar").css("background-color", "#909090");
+                    //$(".nav>li>a").css("color", "#FFFFFF");
+                    //$(".navbar-toggle .icon-bar").css("background-color", "#FFFFFF");
         });
         $('#myNavbar').on('hidden.bs.collapse', function(){
-            $(".navbar-fixed-top").css("background-color", "transparent");
+            //$(".navbar-fixed-top").css("background-color", "transparent");
             $('.nav-pills').removeClass('nav-stacked').css('width','auto');
-            $(".navbar-toggle .icon-bar").css("background-color", "#909090");
+            //$(".navbar-toggle .icon-bar").css("background-color", "#909090");
+        });
+    
+    //NAVIGATION LINKS
+        $('.nav-pills li').click(function(){
+            var id = $(this).attr('id');
+            id = '#' + id.replace('tab','');
+            $('.active').removeClass('active').hide();
+            $(id).addClass('active').show();            
         });
 
 </script>    
