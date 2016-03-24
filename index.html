@@ -44,11 +44,11 @@
 <!--                <p style="padding:8px;"></p>-->
             <div class="collapse navbar-collapse nav-justified" id="myNavbar">
                 <ul class="nav nav-pills">
-                    <li id="abouttab"><a href="#about" >About Us</a></li>
-                    <li id="servicestab"><a href="#services">Services</a></li>
-                    <li id="networktab"><a href="#network" >Global Network</a></li>
-                    <li id="trackingtab"><a href="#tracking" >Tracking System</a></li>
-                    <li id="contacttab"><a href="#contact" >Contact</a></li>
+                    <li id="abouttab"><a href="#" >About Us</a></li>
+                    <li id="servicestab"><a href="#">Services</a></li>
+                    <li id="networktab"><a href="#" >Global Network</a></li>
+                    <li id="trackingtab"><a href="#" >Tracking System</a></li>
+                    <li id="contacttab"><a href="#" >Contact</a></li>
                 </ul>
             </div>
             <p style="padding:1px;"></p>
@@ -252,7 +252,8 @@
             var id = $(this).attr('id');
             id = '#' + id.replace('tab','');
             $('.active').removeClass('active').hide();
-            $(id).addClass('active').show("explode", {pieces:10}, 800);   
+            //$(id).addClass('active').show("explode", {pieces:10}, 800);   
+            $(id).addClass('active').show('slide', {direction: 'left'}, 500);
         });
     
     
