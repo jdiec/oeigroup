@@ -249,11 +249,30 @@
     
     //NAVIGATION LINKS
         $('.navbar-header a , .nav-pills li').click(function(){
-            var id = $(this).attr('id');
-            id = '#' + id.replace('tab','');
-            $('.active').removeClass('active').hide();
+            var id = $(this).attr('id').replace('tab','');
+            var id2 = '#' + id;
+            
+            var tablist =  ['home','about','services','network','tracking','contact'];
+            
+            var activeIndex = tablist.indexOf($('.active').attr('id'));
+            console.log(activeIndex);
+            console.log(id);
+            console.log(tablist.indexOf(id));
+            
+            //$('.active').removeClass('active').hide();
             //$(id).addClass('active').show("explode", {pieces:10}, 800);   
-            $(id).addClass('active').show('slide', {direction: 'left'}, 500);
+            
+            if (activeIndex < tablist.indexOf(id)){
+                console.log('greater');
+                $('.active').removeClass('active').hide('slide', {direction: 'left'}, 300);
+                $(id2).addClass('active').delay(300).show('slide', {direction: 'right'}, 300);
+                
+            }else{
+                 console.log('less');
+                $('.active').removeClass('active').hide('slide', {direction: 'right'}, 300);
+                $(id2).addClass('active').delay(300).show('slide', {direction: 'left'}, 300);
+            }
+                                                    
         });
     
     
