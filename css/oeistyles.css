@@ -2,8 +2,15 @@ html, body{
     height: 100%;
 }
 
+.navbar-fixed-top{
+    transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+}
+
 .navbar-fixed-top:hover{
-/*    background-color: antiquewhite;*/
+   background-color: #FFFFFF;
 }
 
 .background{

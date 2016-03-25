@@ -281,10 +281,18 @@
 <script>
     
     $(document).ready(function(){
-       
+        
     })
     
-
+    $('.navbar-fixed-top').mouseover(function(){
+            $(this).css('padding-bottom',"10px");
+            $('.navbar-fixed-top svg').hide(); 
+    });
+    $('.navbar-fixed-top').mouseout(function(){
+            $(this).css('padding-bottom',"0px");
+            //$('.navbar-fixed-top svg').show(500); 
+    });
+    
 
     //NAVBAR COLLAPSED
         //Stack menu when collapsed
