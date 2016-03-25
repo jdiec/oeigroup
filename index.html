@@ -281,7 +281,12 @@
 <script>
     
     $(document).ready(function(){
-        
+        if('#home').hasClass('active'){
+            $('.nav>li>a').css('color','#FFFFFF');
+        }
+        else{
+             $('.nav>li>a').css('color','#909090');
+        }
     })
     
     $('.navbar-fixed-top').mouseover(function(){
