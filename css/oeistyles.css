@@ -2,6 +2,10 @@ html, body{
     height: 100%;
 }
 
+.navbar-fixed-top:hover{
+/*    background-color: antiquewhite;*/
+}
+
 .background{
     position: relative;
     min-height: 100%;
@@ -13,7 +17,7 @@ html, body{
 }
 
 .background-img{
-    background-image: url("../img/mountain2.jpg");
+    background-image: url("../img/beach2.jpg");
 }
 
 .navbar-brand{
@@ -79,13 +83,34 @@ html, body{
 }
 
 .jumbotron{
-/*    min-height: 100vh;*/
+    min-height: 100vh;
+}
+
+.jumbotron .row{
+    position: relative;
+    bottom:310px;
+    margin-left: auto;
+}
+
+.jumbotron .row img{
+    height: 170px;
+    widows: 170px;
+}
+
+.jumbotron .row p{
+    font-size: 14pt;
+}
+
+#learnmorebutton{
+    margin:auto;
 }
 
 #about, #services, #network, #tracking, #contact{
     display: none;
     background-color: aliceblue;
     padding-bottom: 300px;
+    position:relative;
+    top: 102px;
 }
 
 
@@ -193,6 +218,7 @@ p{
 
 
 footer, footer p{
+    bottom:0;
     font-size: 9pt;
     margin: auto;
 }
