@@ -147,19 +147,19 @@
     
     
     <div id="network" class="container">
-        <div class="row" style="padding:200px; background-color:#909090;">
+        <div class="row" style="padding:250px; background-color:#909090;">
             Network section
         </div>
-            <p style="padding:10px;"></p>
-        <div class="row" style="padding:200px; background-color:#909090;">
+            <p style="padding:50px;"></p>
+        <div class="row" style="padding:250px; background-color:#909090;">
             Network section
         </div>
-            <p style="padding:10px;"></p>
-        <div class="row" style="padding:200px; background-color:#909090;">
+            <p style="padding:50px;"></p>
+        <div class="row" style="padding:250px; background-color:#909090;">
             Network section
         </div>
-            <p style="padding:10px;"></p>
-        <div class="row" style="padding:200px; background-color:#909090;">
+            <p style="padding:50px;"></p>
+        <div class="row" style="padding:250px; background-color:#909090;">
             Network section
         </div>
         
@@ -343,13 +343,13 @@
                    var divBottom = $(this).height();
                    var divBorder = divTop + divBottom; 
                    var screenBottom = $(window).scrollTop() + $(window).height(); 
-                   if ((divBorder < scrollPosition) || (divBorder > screenBottom)){
-                        $(this).css('opacity','0.5');
-                        $(this).css('width','70%');  
+                   if ((divTop + 200 < scrollPosition) || (divTop + 200 > screenBottom)){
+                            $(this).css('opacity','0.5');
+                            $(this).css('width','70%');  
                    }
                    else{
-                        $(this).css('opacity','1');
-                        $(this).css('width','100%'); 
+                            $(this).css('opacity','1');
+                            $(this).css('width','100%'); 
                    }
            }); 
         });

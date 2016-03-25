@@ -199,10 +199,10 @@ footer, footer p{
 
 .row{
     margin: auto;
-    transition-duration: 800ms;
-    -webkit-transition-duration: 800ms;
-    -moz-transition-duration: 800ms;
-    -o-transition-duration: 800ms;
+    transition-duration: 300ms;
+    -webkit-transition-duration: 300ms;
+    -moz-transition-duration: 300ms;
+    -o-transition-duration: 300ms;
 }
 
 
