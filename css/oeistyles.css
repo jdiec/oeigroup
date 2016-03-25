@@ -2,6 +2,23 @@ html, body{
     height: 100%;
 }
 
+body:before{
+      content: "";
+      display: block;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -10;
+      background: url('../img/beach2.jpg') no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+
+}
+
 .navbar-fixed-top{
     transition-duration: 800ms;
     -webkit-transition-duration: 800ms;
@@ -90,7 +107,8 @@ html, body{
 }
 
 .jumbotron{
-    min-height: 100vh;
+    background-color: transparent;
+/*    min-height: 100vh;*/
 }
 
 .jumbotron .row{
@@ -109,6 +127,8 @@ html, body{
 }
 
 #learnmorebutton{
+    color: #FFFFFF;
+    border-color: #FFFFFF;
     margin:auto;
 }
 
