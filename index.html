@@ -147,9 +147,22 @@
     
     
     <div id="network" class="container">
-        <div class="row">
+        <div class="row" style="padding:200px; background-color:#909090;">
             Network section
         </div>
+            <p style="padding:10px;"></p>
+        <div class="row" style="padding:200px; background-color:#909090;">
+            Network section
+        </div>
+            <p style="padding:10px;"></p>
+        <div class="row" style="padding:200px; background-color:#909090;">
+            Network section
+        </div>
+            <p style="padding:10px;"></p>
+        <div class="row" style="padding:200px; background-color:#909090;">
+            Network section
+        </div>
+        
     
     </div>
     
@@ -319,6 +332,26 @@
                         .show('slide', {direction: 'left'}, 300);
             }
                                                     
+        });
+    
+    
+    //NETWORK Fading Rows
+        $(window).scroll(function(){
+           $('#network div.row').each(function(){
+                   var scrollPosition = $(window).scrollTop();
+                   var divTop = $(this).offset().top
+                   var divBottom = $(this).height();
+                   var divBorder = divTop + divBottom; 
+                   var screenBottom = $(window).scrollTop() + $(window).height(); 
+                   if ((divBorder < scrollPosition) || (divBorder > screenBottom)){
+                        $(this).css('opacity','0.5');
+                        $(this).css('width','70%');  
+                   }
+                   else{
+                        $(this).css('opacity','1');
+                        $(this).css('width','100%'); 
+                   }
+           }); 
         });
     
     
