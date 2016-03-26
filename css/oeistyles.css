@@ -160,7 +160,7 @@ body:before{
     display: none;
     background-color: aliceblue;
     border-radius: 25px;
-    padding-bottom: 300px;
+    padding-bottom: 100px;
     position:relative;
 /*    top: 102px;*/
     top: 150px;
@@ -281,6 +281,7 @@ footer, footer p{
 
 .row{
     margin: auto;
+    border-radius: 25px;
     transition-duration: 300ms;
     -webkit-transition-duration: 300ms;
     -moz-transition-duration: 300ms;
