@@ -1,5 +1,6 @@
 html, body{
     height: 100%;
+    
 }
 
 body:before{
@@ -154,7 +155,19 @@ body:before{
 }
 
 
+#socialmedia{
+    position: fixed;
+    left: 0%;
+    top:36%;
+}
 
+#socialmedia i{
+    color: #FFFFFF;
+}
+
+#socialmedia li{
+    margin-bottom: 10px;
+}
 
 #about, #services, #network, #tracking, #contact{
     display: none;
@@ -164,6 +177,7 @@ body:before{
     position:relative;
 /*    top: 102px;*/
     top: 150px;
+    width: 70%;
 }
 
 
@@ -273,10 +287,14 @@ p{
 }
 
 
-footer, footer p{
+footer{
     bottom:0;
-    font-size: 9pt;
     margin: auto;
+    margin-top: 170px;
+}
+
+footer p{
+    font-size: 9pt;
 }
 
 .row{
