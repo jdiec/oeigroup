@@ -167,6 +167,17 @@ body:before{
 
 #socialmedia li{
     margin-bottom: 10px;
+    transition: 500ms;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -o-transition: 500ms;
+    -ms-transition: 500ms;
+}
+
+#socialmedia li:hover{
+    transform: scale(2);
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 #about, #services, #network, #tracking, #contact{
