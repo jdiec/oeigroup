@@ -159,6 +159,7 @@ body:before{
 #about, #services, #network, #tracking, #contact{
     display: none;
     background-color: aliceblue;
+    border-radius: 25px;
     padding-bottom: 300px;
     position:relative;
 /*    top: 102px;*/
