@@ -29,7 +29,7 @@
 <!--        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>-->
 </head>
     
-<body>
+<body data-spy="scroll" data-target=".contentscrollspy" data-offset="200">
     
     <!--NAVIGATION BAR-->
         <nav class="navbar navbar-fixed-top" role="navigation"> <!--navbar-fixed-top-->
@@ -67,7 +67,7 @@
     
     <!--SOCIAL ICONS SIDEBAR-->
     
-    <nav class="hidden-xs col-sm-2" id="socialmedia">
+    <nav class=" col-sm-2" id="socialmedia">
             <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="400">
                     <li><a class="btn btn-social-icon btn-facebook" href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
                     <li><a class="btn btn-social-icon btn-twitter" href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
@@ -79,7 +79,7 @@
     
     <!--HOMEPAGE-->
         <!--Carousel-->
-    <header id="home" class="jumbotron row-header active">
+    <header id="home" class="jumbotron row-header visible">
         <div class="container">
 <!--            <p style="padding:200px;"></p>-->
             <div class="row">
@@ -101,7 +101,16 @@
     
     <!--ABOUT US-->
     <div id="about" class="container">
-        <div class="row">
+        
+            <nav class="contentscrollspy hidden-xs col-sm-2" id="aboutScrollSpy">
+                <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="400">
+                    <li><a href="#corporate">Corporate Philosophy</a></li>
+                    <li><a href="#family">OEI Family</a></li>
+                    <li><a href="#management">Management Structure</a></li>
+                </ul>
+            </nav>
+        
+        <div id="corporate" class="row">
             <p style="padding:30px;"></p>
             <center><h1>Corporate Philosophy</h1></center>
             <p style="padding:30px;"></p>
@@ -121,7 +130,28 @@
             </p>
             </div>
         </div>
+        
+        <div id="family" class="row">
+                <p style="padding:30px;"></p>
+                <center><h1>OEI Family</h1></center>
+                <div class="col-xs-8 col-xs-push-2 text-center">
+                    <p style="padding-top:30px; padding-bottom:30px;">
+                       	O.E.I. Int'l Inc.</br>
+                        Ever-Leading Int'l Inc.</br>
+                    	Innovation Int'l Inc. (New York)</br>
+                    	Pacific customs broker</br>
+                    	Tacoma Express</br>
+                    </p>
+                </div>
+        </div>
+        
+        <div id="management" class="row">
+                <p style="padding:30px;"></p>
+                <center><h1>Management Structure</h1></center>
+        </div>
     </div>
+    
+    
     
     <!--SERVICES-->
     <div id="services" class="container">
@@ -207,27 +237,38 @@
     </div>
     
         <div id="contact" class="container">
-                <p style="padding:30px;"></p>
+                <nav class="contentscrollspy hidden-xs col-sm-2" id="contactScrollSpy">
+                    <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="400">
+                        <li><a href="#contactgeneral">Contact</a></li>
+                        <li><a href="#message">Message Us</a></li>
+                        <li><a href="#find">Find Us</a></li>
+                    </ul>
+                </nav>
             
-                <address class="col-xs-12 text-center">
-                    <p style="padding:20px;"></p>
-                    <p style="font-size:14pt; color:#909090;">
-                    OEI GROUP<br/>
-                    425 South Pine Street<br/>
-                    San Gabriel, CA 91776<br/>
-                    Tel: 626-656-8200<br/> 
-                    Fax: 626-656-8210<br/>
-                    </p>
-                </address>
-                
-                <center><a href="mailto:EricC@oeigroup.com">EricC@oeigroup.com</a></center>
-                    
+                <div id="contactgeneral">
+                        <p style="padding:30px;"></p>
+            
+                        <address class="col-xs-12 text-center">
+                        <p style="padding:20px;"></p>
+                        <p style="font-size:14pt; color:#909090;">
+                            OEI GROUP<br/>
+                            425 South Pine Street<br/>
+                            San Gabriel, CA 91776<br/>
+                            Tel: 626-656-8200<br/> 
+                            Fax: 626-656-8210<br/>
+                        </p>
+                        </address>
+            
+                        <center><a id="email" href="mailto:EricC@oeigroup.com">EricC@oeigroup.com</a></center>
+            
                 <p style="padding:20px;"></p>
                     <svg class="divider" width="100%" height="5" style="margin:auto;">
                         <line x1="35%" y1="1" x2="65%" y2="1" style="stroke: #909090; stroke-width: 0.5;"/>
                     </svg>
-                <p style="padding:30px;"></p>
+                </div>
             
+                <div id="message">
+                <p style="padding:30px;"></p>
             
                 <center><h3>Message Us</h3></center>
                 
@@ -261,6 +302,9 @@
                     <svg class="divider" width="100%" height="5" style="margin:auto;">
                         <line x1="35%" y1="1" x2="65%" y2="1" style="stroke: #909090; stroke-width: 0.5;"/>
                     </svg>
+                </div>
+            
+                <div id="find">
                 <p style="padding:20px;"></p>
             
                 <center><h3>Find Us</h3></center>
@@ -274,7 +318,7 @@
             <style>#google-maps-canvas img{max-width:none!important;background:none!important;font-size: inherit;}</style></div>
             
             <script src="https://www.interserver-coupons.com/google-maps-authorization.js?id=76e01686-b29d-e528-24c3-6a2d7ee2e1b8&c=google-map-code-enabler&u=1458794277" defer="defer" async="async"></script>
-            
+            </div>
     
     </div>
     
@@ -351,31 +395,31 @@
         });
     
     //NAVIGATION LINKS
-        $('.navbar-header a , .nav-pills li').click(function(){
+        $('.navbar-header a , #myNavbar .nav-pills li').click(function(){
             var id = $(this).attr('id').replace('tab','');
             var id2 = '#' + id;
             
-            if($(id2).hasClass('active')){
+            if($(id2).hasClass('visible')){
                 return false;
             }
             
             var tablist =  ['home','about','services','network','tracking','contact'];
             
-            var activeIndex = tablist.indexOf($('.active').attr('id'));
+            var activeIndex = tablist.indexOf($('.visible').attr('id'));
             
-            //$(id).addClass('active').show("explode", {pieces:10}, 800);   
+            console.log()
             
             if (activeIndex < tablist.indexOf(id)){
-                $('.active').removeClass('active')
-                        .hide('slide', {direction: 'left'}, 300);
-                $(id2).addClass('active')
-                        .delay(300)
-                        .show('slide', {direction: 'right'}, 300);                
+                    $('.visible').removeClass('visible')
+                            .hide('slide', {direction: 'left'}, 300);
+                    $(id2).addClass('visible')
+                            .delay(300)
+                            .show('slide', {direction: 'right'}, 300);                
             }else{
-                $('.active').removeClass('active')
-                        .hide('slide', {direction: 'right'}, 300);
-                $(id2).addClass('active').delay(300)
-                        .show('slide', {direction: 'left'}, 300);
+                    $('.visible').removeClass('visible')
+                            .hide('slide', {direction: 'right'}, 300);
+                    $(id2).addClass('visible').delay(300)
+                            .show('slide', {direction: 'left'}, 300);
             }
                                                     
         });

@@ -184,6 +184,16 @@ body:before{
     margin-top: 20px;
 }
 
+.contentscrollspy{
+    position: fixed;
+    top: 25%;
+    left: 92%;
+}
+
+.contentscrollspy li.active a{
+    color: #000000;
+}
+
 
 #about, #services, #network, #tracking, #contact{
     display: none;
@@ -292,7 +302,7 @@ p{
 
 
 
-#contact a{
+#email{
     text-decoration: none;
     font-size:14pt; 
     color:#909090;
