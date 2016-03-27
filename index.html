@@ -7,6 +7,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">   
     
+        <link rel="icon" href="img/oeilogo.png">
+    
     <!--BOOTSTRAP-->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/bootstrap-theme.min.css" rel="stylesheet">
@@ -43,7 +45,7 @@
                     <span class="icon-bar"></span> 
                     </button>
                     <a id="hometab" class="navbar-brand" href="#"><img src="img/oeilogo.png" height="50" width="50">    
-                    <img src="img/oeilabel.jpg" height="25" width="120"></a>
+                    <img src="img/oeilabel.jpg" height="25" width="100"></a>
                 </div>  
 <!--                <p style="padding:8px;"></p>-->
             <div class="collapse navbar-collapse nav-justified" id="myNavbar">
@@ -67,7 +69,7 @@
     
     <!--SOCIAL ICONS SIDEBAR-->
     
-    <nav class=" col-sm-2" id="socialmedia">
+    <nav class="hidden-xs col-sm-2 socialmedia">
             <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="400">
                     <li><a class="btn btn-social-icon btn-facebook" href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
                     <li><a class="btn btn-social-icon btn-twitter" href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
@@ -105,7 +107,13 @@
             <nav class="contentscrollspy hidden-xs col-sm-2" id="aboutScrollSpy">
                 <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="400">
                     <li><a href="#corporate">Corporate Philosophy</a></li>
+                        <svg class="divider" width="100%" height="5" style="margin:auto;">
+                            <line x1="5%" y1="1" x2="45%" y2="1" style="stroke: #909090; stroke-width: 0.5;"/>
+                        </svg>
                     <li><a href="#family">OEI Family</a></li>
+                        <svg class="divider" width="100%" height="5" style="margin:auto;">
+                            <line x1="5%" y1="1" x2="45%" y2="1" style="stroke: #909090; stroke-width: 0.5;"/>
+                        </svg>
                     <li><a href="#management">Management Structure</a></li>
                 </ul>
             </nav>
@@ -148,6 +156,15 @@
         <div id="management" class="row">
                 <p style="padding:30px;"></p>
                 <center><h1>Management Structure</h1></center>
+                <div class="col-xs-8 col-xs-push-2 text-center">
+                    <p style="padding-top:30px; padding-bottom:30px;">
+                        Import & Export</br>
+                        Air Division</br>
+                        Ocean Division</br>
+                        Custom Brokerage Division</br>
+                        Trucking Division</br>
+                    </p>
+                </div>
         </div>
     </div>
     
@@ -213,6 +230,21 @@
     </div>
     
     <div id="tracking" class="container">
+        
+            <nav class="contentscrollspy hidden-xs col-sm-2" id="trackingScrollSpy">
+                <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="400">
+                    <li><a href="#trackingsystem">Tracking System</a></li>
+                        <svg class="divider" width="100%" height="5" style="margin:auto;">
+                            <line x1="5%" y1="1" x2="45%" y2="1" style="stroke: #909090; stroke-width: 0.5;"/>
+                        </svg>
+                    <li><a href="#oeiinternational">OEI International</a></li>
+                        <svg class="divider" width="100%" height="5" style="margin:auto;">
+                            <line x1="5%" y1="1" x2="45%" y2="1" style="stroke: #909090; stroke-width: 0.5;"/>
+                        </svg>
+                    <li><a href="#everleading">Ever Leading</a></li>
+                </ul>
+            </nav>
+        
         <p style="padding:30px;"></p>
         <div class="row">
             <div class="col-xs-12 col-xs-push-4">
@@ -222,7 +254,7 @@
         </div>
         
         
-        <div class="row">
+        <div id="trackingsystem" class="row">
             <div class="col-xs-12 col-sm-7 col-sm-push-3">
                 <p>
                 We are completely computerized. Our sophisticated computer 
@@ -233,14 +265,27 @@
                 </p>
             </div>
         </div>
-    
+        
+        <div id="oeiinternational" class="row">
+                <center><h1>OEI International</h1></center>    
+        </div> 
+        
+        <div id="everleading" class="row">
+                <center><h1>Ever Leading</h1></center>
+        </div>
     </div>
     
         <div id="contact" class="container">
                 <nav class="contentscrollspy hidden-xs col-sm-2" id="contactScrollSpy">
                     <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="400">
                         <li><a href="#contactgeneral">Contact</a></li>
+                            <svg class="divider" width="100%" height="5" style="margin:auto;">
+                                <line x1="5%" y1="1" x2="45%" y2="1" style="stroke: #909090; stroke-width: 0.5;"/>
+                            </svg>
                         <li><a href="#message">Message Us</a></li>
+                            <svg class="divider" width="100%" height="5" style="margin:auto;">
+                                <line x1="5%" y1="1" x2="45%" y2="1" style="stroke: #909090; stroke-width: 0.5;"/>
+                            </svg>
                         <li><a href="#find">Find Us</a></li>
                     </ul>
                 </nav>
@@ -323,9 +368,18 @@
     </div>
     
     
-    
 <!--FOOTER-->
     <footer class=" col-xs-12 text-center">
+<!--
+        <nav class="visible-xs col-sm-2 socialmedia">
+            <ul class="nav nav-pills" data-spy="affix" data-offset-top="400">
+                    <li><a class="btn btn-social-icon btn-facebook" href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a class="btn btn-social-icon btn-twitter" href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a class="btn btn-social-icon btn-linkedin" href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a class="btn btn-social-icon btn-google-plus" href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+            </ul>
+        </nav>
+-->
         <svg class="divider" width="100%" height="5" style="margin:auto;">
             <line x1="35%" y1="1" x2="65%" y2="1" style="stroke: #909090; stroke-width: 0.5;"/>
         </svg> 
@@ -343,37 +397,15 @@
     
 <script>
     
-    var animateNavbar = (function(){
-//            if ($(window).scrollTop() > $('.navbar-fixed-top').height()){
-//                    $('.nav>li>a').css('color','#909090');
-//                    $('.navbar-fixed-top').css('background-color', '#FFFFFF');
-//            }
-//            else{   
-//                    if ($('#home').hasClass('active')){
-//                          $('.nav>li>a').css('color','#FFFFFF');
-//                          $('.navbar-fixed-top').mouseover(function(){
-//                                $('.nav>li>a').css('color','#909090');
-//                                $('.navbar-fixed-top').css('background-color', '#FFFFFF');
-//                          }).mouseout(function(){
-//                                $('.nav>li>a').css('color','#FFFFFF');
-//                                $('.navbar-fixed-top').css('background-color', 'transparent');
-//                          });
-//                    }
-//                    else{
-//                          $('.navbar-fixed-top').css('background-color', 'transparent');
-//                    }
-//                $('.navbar-fixed-top').css('background-color', 'transparent');
-//            }
-    });
-    
     $(document).ready(function(){
+                
             $(window).scroll(function(){
                                     
                     if ($(window).scrollTop() > $('.navbar-fixed-top').height()){
-                            $('.navbar-fixed-top').addClass('hover');    
+                            $('.navbar-fixed-top').addClass('scroll');    
                     }
                     else{
-                            $('.navbar-fixed-top').removeClass('hover');     
+                            $('.navbar-fixed-top').removeClass('scroll');     
                     }
             });
     });
@@ -396,6 +428,9 @@
     
     //NAVIGATION LINKS
         $('.navbar-header a , #myNavbar .nav-pills li').click(function(){
+            $('.activeTab').removeClass('activeTab');
+            $(this).find('a').addClass('activeTab');
+
             var id = $(this).attr('id').replace('tab','');
             var id2 = '#' + id;
             
