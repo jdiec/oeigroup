@@ -132,7 +132,7 @@ body:before{
 
 .jumbotron .row{
     position: relative;
-    top: 90px;
+    top: 65px;
     bottom:0px;
     margin-left: auto;
 }
@@ -144,14 +144,17 @@ body:before{
 }
 
 .jumbotron h1{
+    position: relative;
+    bottom: 5px;
     color: #210f5d;
     font-size: 36pt;
 }
 
 .jumbotron .row p{
-    font-size: 14pt;
+    font-size: 13pt;
     color: #210f5d;
     margin-left:100px;
+    margin-top: 3px;
 }
 
 
@@ -175,10 +178,12 @@ body:before{
 }
 
 #socialmedia li:hover{
+/*    transform: scale(2); rotate(360deg) */
     transform: scale(2);
     margin-bottom: 20px;
     margin-top: 20px;
 }
+
 
 #about, #services, #network, #tracking, #contact{
     display: none;

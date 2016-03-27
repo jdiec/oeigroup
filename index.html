@@ -69,10 +69,10 @@
     
     <nav class="hidden-xs col-sm-2" id="socialmedia">
             <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="400">
-                    <li><a class="btn btn-social-icon btn-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a class="btn btn-social-icon btn-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a class="btn btn-social-icon btn-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a class="btn btn-social-icon btn-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a class="btn btn-social-icon btn-facebook" href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a class="btn btn-social-icon btn-twitter" href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a class="btn btn-social-icon btn-linkedin" href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a class="btn btn-social-icon btn-google-plus" href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
             </ul>
     </nav>
     
@@ -324,6 +324,7 @@
     
     $(document).ready(function(){
             $(window).scroll(function(){
+                                    
                     if ($(window).scrollTop() > $('.navbar-fixed-top').height()){
                             $('.navbar-fixed-top').addClass('hover');    
                     }
