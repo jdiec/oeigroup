@@ -348,6 +348,7 @@ p{
     position: relative;
     top: 30px;
     left: 42%;
+    z-index: 10;
     transition: 500ms;
     -webkit-transition: 500ms;
     -moz-transition: 500ms;

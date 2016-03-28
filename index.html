@@ -422,22 +422,26 @@
             if ($(this).hasClass('fa-circle')){
                      return false;
             }
-        
-
+            
+            var activeElement;
+            var targetElement;
+            
             $('a .fa').not('.socialmedia i').each(function(index, el){
-                     console.log(el);
-                     console.log(index);
+                    if (el.className == 'fa fa-circle'){
+                        activeElement = 'alt'+ index;
+                        $('body').toggleClass(activeElement);
+                    }
             });
-        
-        
-        
         
             $('.fa-circle').removeClass('fa-circle').addClass('fa-circle-thin');
             $(this).removeClass('fa-circle-thin').addClass('fa-circle');
-            
-                
         
-            $('body').toggleClass('alt0');
+            $('a .fa').not('.socialmedia i').each(function(index, el){
+                    if (el.className == 'fa fa-circle'){
+                        targetElement = 'alt'+ index;
+                        $('body').toggleClass(targetElement);
+                    }
+            });            
     });
     
 
