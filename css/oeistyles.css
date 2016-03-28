@@ -3,7 +3,24 @@ html, body{
     
 }
 
-body:before {
+body:before{
+      background: url('../img/beach2.jpg') no-repeat center center;
+}
+
+body.alt0:before {
+      background: url('../img/bluesky.jpg') no-repeat center center;
+}
+
+body.alt1:before{
+    background: url('../img/ocean.jpg') no-repeat center center;
+}
+
+body.alt2:before{
+    background: url('../img/plane.jpg') no-repeat center center;
+}
+
+body:before, body.alt0:before, body.alt1:before, 
+    body.alt2:before, body.alt3:before, body.alt4:before{
       content: "";
       display: block;
       position: fixed;
@@ -12,8 +29,6 @@ body:before {
       width: 100%;
       height: 100%;
       z-index: -10;
-      background: url('../img/beach2.jpg') no-repeat center center;
-      background-image: url('../img/beach2.jpg') no-repeat center center;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -22,22 +37,6 @@ body:before {
       -webkit-transition-duration: 600ms;
       -moz-transition-duration: 600ms;
       -o-transition-duration: 600ms;
-}
-
-body.special:before{
-      background: url('../img/bluesky.jpg') no-repeat center center;
-      content: "";
-      display: block;
-      position: fixed;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -10;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
 }
 
 .fa-circle-thin, .fa-circle{
