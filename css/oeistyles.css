@@ -3,7 +3,7 @@ html, body{
     
 }
 
-body:before{
+body:before {
       content: "";
       display: block;
       position: fixed;
@@ -13,12 +13,49 @@ body:before{
       height: 100%;
       z-index: -10;
       background: url('../img/beach2.jpg') no-repeat center center;
-/*      background: url('../img/sky.jpg') no-repeat center center;*/
+      background-image: url('../img/beach2.jpg') no-repeat center center;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
+      transition-duration: 600ms;
+      -webkit-transition-duration: 600ms;
+      -moz-transition-duration: 600ms;
+      -o-transition-duration: 600ms;
+}
 
+body.special:before{
+      background: url('../img/bluesky.jpg') no-repeat center center;
+      content: "";
+      display: block;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -10;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+
+.fa-circle-thin, .fa-circle{
+    color: #FFFFFF;
+    margin-top: 60px;
+    margin-left: 5px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.fa-circle-thin:hover, .fa-circle:hover{
+/*
+      -webkit-filter: blur(1px);
+      -moz-filter: blur(1px);
+      -o-filter: blur(1px);
+      -ms-filter: blur(1px);
+      filter: blur(1px);
+*/
 }
 
 .navbar-brand{
