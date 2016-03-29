@@ -69,14 +69,16 @@
     
     <!--SOCIAL ICONS SIDEBAR-->
     
-    <nav class="hidden-xs col-sm-2 socialmedia">
-            <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="400">
-                    <li><a class="btn btn-social-icon btn-facebook" href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                    <li><a class="btn btn-social-icon btn-twitter" href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                    <li><a class="btn btn-social-icon btn-linkedin" href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a class="btn btn-social-icon btn-google-plus" href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-            </ul>
-    </nav>
+<!--
+        <nav class="hidden-xs col-sm-2 socialmedia">
+                <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="400">
+                        <li><a class="btn btn-social-icon btn-facebook" href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="btn btn-social-icon btn-twitter" href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="btn btn-social-icon btn-linkedin" href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a class="btn btn-social-icon btn-google-plus" href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                </ul>
+        </nav>
+-->
     
     
     <!--HOMEPAGE-->
@@ -111,7 +113,7 @@
     <!--ABOUT US-->
     <div id="about" class="container">
         
-            <nav class="contentscrollspy hidden-xs hidden-sm col-md-2" id="aboutScrollSpy">
+            <nav class="contentscrollspy hidden-xs col-sm-2" id="aboutScrollSpy">
                 <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="400">
                     <li><a href="#corporate">Corporate Philosophy</a></li>
                         <svg class="divider" width="100%" height="5" style="margin:auto;">
@@ -125,11 +127,11 @@
                 </ul>
             </nav>
         
-        <div id="corporate" class="row rowContainer">
+        <div id="corporate" class="row">
 <!--            <p style="padding:30px;"></p>-->
             <center><h1>Corporate Philosophy</h1></center>
             <p style="padding:10px;"></p>
-            <div class="col-xs-8 col-xs-push-2 text-center">
+            <div class="col-xs-12 col-xs-push-0 col-sm-8 col-sm-push-2 text-center">
                 <img src="img/line.png"  width="150" height="30">
                 <p style="padding:10px;"></p>
             <p>
@@ -146,6 +148,13 @@
                     long term stability to our clients and staff.
             </p>
             </div>
+            
+                <div class="col-xs-8 col-xs-push-2 text-center">
+                
+                    
+                    <div class="background background-img" style="width:750px; height:200px;"></div>
+                
+                </div>
         </div>
         
         <div id="family" class="row">
@@ -164,7 +173,7 @@
                 </div>
         </div>
         
-        <div id="management" class="row rowContainer">
+        <div id="management" class="row">
                 <p style="padding:30px;"></p>
                 <center><h1>Management Structure</h1></center>
                 <p style="padding:10px;"></p>
@@ -185,16 +194,18 @@
     
     <!--SERVICES-->
     <div id="services" class="container">
-        <div class="row rowContainer">
+        <div class="row">
                     <p style="padding:30px;"></p>
-            <div class="col-xs-12 col-sm-7 col-sm-push-3">
-                    <p>
+            <div class="col-xs-12 col-sm-7 col-sm-push-3 text-center">
+                    <p style="font-size:18pt;">
                      "As OEI Group, we possess strong confidence in Worldwide Cargo Market ,
                     under conducting aggressive sales promotion and development by experienced 
-                    Cargo Sales Executives and gaining remarkable credit and business relation 
+                    Cargo Sales Executives and gaining remarkable credit and business relations 
                     with many cargo agents".
                     </p>
-                    <p style="padding:20px;"></p>
+                    <p style="padding:10px;"></p>
+                    <img src="img/line.png"  width="150" height="30">
+                    <p style="padding:10px;"></p>
             </div>
             
             <div class="col-xs-12 col-sm-7 col-sm-push-3">
@@ -223,10 +234,6 @@
     
     
     <div id="network" class="container" style="background-color:transparent;">
-        <div class="row rowContainer">
-            <img src="img/world.jpg" style="height:inherit; width:inherit;">
-        </div>
-<!--
         <div class="row" style="padding:250px; background-color:#FFFFFF;">
             Network section
         </div>
@@ -242,7 +249,6 @@
         <div class="row" style="padding:250px; background-color:#FFFFFF;">
             Network section
         </div>
--->
         
     
     </div>
@@ -263,8 +269,8 @@
                 </ul>
             </nav>
         
-<!--        <p style="padding:30px;"></p>-->
 <!--
+        <p style="padding:30px;"></p>
         <div class="row">
             <div class="col-xs-12 col-xs-push-4">
                 <img src="img/oeiint.png">
@@ -274,8 +280,11 @@
 -->
         
         
-        <div id="trackingsystem" class="row rowContainer">
-            <div class="col-xs-12 col-sm-7 col-sm-push-3">
+        <div id="trackingsystem" class="row">
+                                <center><h1>Tracking System</h1></center>
+
+            <div class="col-xs-12 col-xs-push-0 col-sm-7 col-sm-push-3 text-center">
+                <p style="padding:10px;"></p>
                 <p>
                 We are completely computerized. Our sophisticated computer 
                 system can track your shipments from point of origin to point 
@@ -286,11 +295,11 @@
             </div>
         </div>
         
-        <div id="oeiinternational" class="row rowContainer">
+        <div id="oeiinternational" class="row">
                 <center><h1>OEI International</h1></center>    
         </div> 
         
-        <div id="everleading" class="row rowContainer">
+        <div id="everleading" class="row">
                 <center><h1>Ever Leading</h1></center>
         </div>
     </div>
@@ -310,12 +319,12 @@
                     </ul>
                 </nav>
             
-                <div id="contactgeneral" class="rowContainer">
+                <div id="contactgeneral" class="row">
                         <p style="padding:30px;"></p>
             
                         <address class="col-xs-12 text-center">
-                        <p style="padding:20px;"></p>
-                        <p style="font-size:14pt; color:#909090;">
+<!--                        <p style="padding:20px;"></p>-->
+                        <p>
                             OEI GROUP<br/>
                             425 South Pine Street<br/>
                             San Gabriel, CA 91776<br/>
@@ -324,22 +333,24 @@
                         </p>
                         </address>
             
-                        <center><a id="email" href="mailto:EricC@oeigroup.com">EricC@oeigroup.com</a></center>
+                        <center><a id="emaillink" href="mailto:EricC@oeigroup.com">EricC@oeigroup.com</a></center>
             
                 <p style="padding:20px;"></p>
+                </div>
+            
+                <div id="message" class="row">
+<!--
                     <svg class="divider" width="100%" height="5" style="margin:auto;">
                         <line x1="35%" y1="1" x2="65%" y2="1" style="stroke: #909090; stroke-width: 0.5;"/>
                     </svg>
-                </div>
-            
-                <div id="message" class="rowContainer">
                 <p style="padding:30px;"></p>
+-->
             
-                <center><h3>Message Us</h3></center>
-                
+                <center><h1>Message Us</h1></center>
+                        <p style="padding:10px;"></p>
                 <div class="row">
-                        <div class="col-sm-4 col-sm-push-4">
-                            <form name="contactForm" id="contactForm" action="//formspree.io/jpd276@cornell.edu" method="POST">
+                        <div class="col-sm-6 col-sm-push-3">
+                            <form name="contactForm" id="contactForm" action="//formspree.io/EricC@oeigroup.com" method="POST">
                                 <input type="text" name="_gotcha" style="display:none" />
                                 <div class="form-group floating-label-form-group">
                                     <label>Name</label>
@@ -363,23 +374,25 @@
                         </div>
                 </div>
             
+<!--
                 <p style="padding:50px;"></p>
                     <svg class="divider" width="100%" height="5" style="margin:auto;">
                         <line x1="35%" y1="1" x2="65%" y2="1" style="stroke: #909090; stroke-width: 0.5;"/>
                     </svg>
+-->
                 </div>
             
-                <div id="find" class="rowContainer">
+                <div id="find" class="row">
                 <p style="padding:20px;"></p>
             
-                <center><h3>Find Us</h3></center>
+                <center><h1>Find Us</h1></center>
                 
                 <p style="padding:10px;"></p>
             
             <!--Map-->
                 
             
-                <div style="height:400px;width:600px;max-width:100%;list-style:none; transition: none;overflow:hidden; margin:auto;"><div id="google-maps-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=425+South+Pine+Street,+San+Gabriel,+CA,+United+States&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe></div><a class="google-map-code-enabler" href="https://www.interserver-coupons.com" id="get-map-data">interserver coupons</a>
+                <div style="height:400px;width:inherit;max-width:800px;list-style:none; transition: none;overflow:hidden; margin:auto;"><div id="google-maps-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=425+South+Pine+Street,+San+Gabriel,+CA,+United+States&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe></div><a class="google-map-code-enabler" href="https://www.interserver-coupons.com" id="get-map-data">interserver coupons</a>
             <style>#google-maps-canvas img{max-width:none!important;background:none!important;font-size: inherit;}</style></div>
             
             <script src="https://www.interserver-coupons.com/google-maps-authorization.js?id=76e01686-b29d-e528-24c3-6a2d7ee2e1b8&c=google-map-code-enabler&u=1458794277" defer="defer" async="async"></script>
@@ -508,23 +521,23 @@
     
     
     //NETWORK Fading Rows
-//        $(window).scroll(function(){
-//           $('#network div.row').each(function(){
-//                   var scrollPosition = $(window).scrollTop();
-//                   var divTop = $(this).offset().top
-//                   var divBottom = $(this).height();
-//                   var divBorder = divTop + divBottom; 
-//                   var screenBottom = $(window).scrollTop() + $(window).height(); 
-//                   if ((divTop + 200 < scrollPosition) || (divTop + 200 > screenBottom)){
-//                            $(this).css('opacity','0.5');
-//                            $(this).css('width','70%');  
-//                   }
-//                   else{
-//                            $(this).css('opacity','1');
-//                            $(this).css('width','100%'); 
-//                   }
-//           }); 
-//        });
+        $(window).scroll(function(){
+           $('#network div.row').each(function(){
+                   var scrollPosition = $(window).scrollTop();
+                   var divTop = $(this).offset().top
+                   var divBottom = $(this).height();
+                   var divBorder = divTop + divBottom; 
+                   var screenBottom = $(window).scrollTop() + $(window).height(); 
+                   if ((divTop + 200 < scrollPosition) || (divTop + 200 > screenBottom)){
+                            $(this).css('opacity','0.5');
+                            $(this).css('width','70%');  
+                   }
+                   else{
+                            $(this).css('opacity','1');
+                            $(this).css('width','100%'); 
+                   }
+           }); 
+        });
     
     
     //CONTACT

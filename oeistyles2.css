@@ -39,6 +39,23 @@ body:before, body.alt0:before, body.alt1:before,
       -o-transition-duration: 600ms;
 }
 
+.background{
+    position: relative;
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 1;
+}
+
+
+.background-img{
+    background-image: url('../img/plane2.jpg');
+}
+
+
+
 .fa-circle-thin, .fa-circle{
     color: #FFFFFF;
     margin-top: 60px;
@@ -147,7 +164,6 @@ body:before, body.alt0:before, body.alt1:before,
     }
 }
 
-
 #myNavbar .nav-pills{
     position: relative;
     top: 15px;
@@ -216,10 +232,9 @@ body:before, body.alt0:before, body.alt1:before,
     margin-top: 3px;
 }
 
-
 .socialmedia{
     position: fixed;
-    left: 0%;
+    left: 0;
     top:36%;
 }
 
@@ -249,14 +264,18 @@ body:before, body.alt0:before, body.alt1:before,
 
 .contentscrollspy{
     position: fixed;
-    top: 25%;
-    left: 92%;
+    top: 15%;
+/*
+    left: 0;
+    margin-left: 12%;
+*/
+    left: 94%;
     margin-right: 5%;
 }
 
 .contentscrollspy li a, .contentscrollspy li.active a{
-/*    font-size: 11pt;*/
     color: #000000;
+/*    background-color: transparent !important; */
 }
 
 
@@ -266,37 +285,63 @@ body:before, body.alt0:before, body.alt1:before,
     border-radius: 10px;
     padding-bottom: 100px;
     position:relative;
+/*    top: 102px;*/
     top: 70px;
-    width: 75%;
-}
-
-@media screen and (max-width:900px){
-    #about, #services, #network, #tracking, #contact{
-        width: 100%;
-        margin-left: 5%;
-    }
-}
-
-.rowContainer{
     width: 100%;
+}
+
+#corporate, #family, #management, 
+    #services .row,
+    #trackingsystem, #oeiinternational, #everleading, 
+        #contactgeneral, #message, #find{
+    width: 95%;
     margin-top: 20px;
-    padding-top: 100px;
+    padding: 100px;
     padding-bottom: 120px;
-    border-radius: 0px !important;
-    background-color: #FFFFFF;
+    border-radius: 0px;
+    background-color: rgba(255,255,255,1);
     box-shadow: 0px 3px 50px #909090;
     -webkit-box-shadow: 0px 3px 50px #909090;
     -moz-box-shadow: 0px 3px 50px #909090;
+/*
+    box-shadow: 0px 0px 8px 2px #909090;
+    -webkit-box-shadow: 0px 0px 8px 2px #909090;
+    -moz-box-shadow: 0px 0px 8px 2px #909090;
+*/
 }
+
+@media screen and (max-width: 900px){
+    .row, #services .row,
+    #trackingsystem, #oeiinternational, #everleading, 
+    #contactgeneral, #message, #find{
+            padding-left: 10px;
+            padding-right: 10px;
+    }
+}
+
+
+
 
 #corporate p, #management p{
     color: #636262;
 }
 
+
+#services{
+    width:inherit;
+}
+
+
+#services .row{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/*
 #family{
     width: 95%;
     margin-top: 20px;
-    background-color: #f9edcb;
+    background-color: #cbd1ef;
     border-radius: 0px;
     padding: 80px;
     box-shadow: 0px 3px 5px #909090;
@@ -307,12 +352,15 @@ body:before, body.alt0:before, body.alt1:before,
 #family p{
      color: #6a3a16;
 }
+*/
 
 p{
     font-size: 14pt;
-    color: #909090;
-    color: #686868;
+/*    color: #909090;*/
+    color: #636262;
 }
+
+
 
 #tracking img{
     height: 10%;
@@ -344,7 +392,7 @@ p{
 /*    font-size: 1.5em;*/
 /*    font-family: 'Poiret One', cursive;*/
 /*    font-weight: bold;*/
-    font-size: 13pt;
+    font-size: 16pt;
     background: 0 0;
     box-shadow: none!important;
     resize: none;
@@ -410,7 +458,7 @@ p{
 
 
 
-#email{
+#emaillink{
     text-decoration: none;
     font-size:14pt; 
     color:#909090;
@@ -433,17 +481,45 @@ footer p{
 }
 
 .row{
-/*    margin: auto;*/
-    border-radius: 25px;
+    margin: auto;
+/*    border-radius: 25px;*/
     transition-duration: 300ms;
     -webkit-transition-duration: 300ms;
     -moz-transition-duration: 300ms;
     -o-transition-duration: 300ms;
 }
 
+#contactgeneral{
+/*    background-color: #fbf1eb;*/
+}
 
+#message{
+    background-color: #fbf1eb;
+}
 
+#find{
+    background-color: #dee4fa;
+    background-color: rgba(219,217,217,1);
+}
 
+#contact h1{
+    color: #686868;
+}
+
+#contactgeneral p{
+    font-size:18pt;
+    color:#909090;
+} 
+
+#contactgeneral a{
+    font-size: 27pt;
+}
+
+@media screen and (max-width: 900px){
+    p, a, #emaillink{
+        font-size: 12pt;
+    }
+}
 
 
 
