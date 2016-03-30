@@ -148,7 +148,7 @@
             </div>
         </div>
         
-        <div id="family" class="row">
+        <div id="family" class="row rowContainer">
                 <p style="padding:30px;"></p>
                 <center><h1>OEI Family</h1></center>
                 <p style="padding:10px;"></p>
@@ -186,15 +186,22 @@
     <!--SERVICES-->
     <div id="services" class="container">
         <div class="row rowContainer">
-                    <p style="padding:30px;"></p>
-            <div class="col-xs-12 col-sm-7 col-sm-push-3">
-                    <p>
+                    <p style="padding:15px;"></p>
+            <div class="col-xs-12 col-sm-7 col-sm-push-3 text-center background-quotes">
+                    <center><h1>What We're Known For</h1></center>
+<!--                    <img  class="background" src="img/quote.png">-->
+                    <p style="padding:15px;"></p>
+                    <img src="img/line.png"  width="100" height="30">
+                    <p style="padding:15px;"></p>
+                    <p style="font-size:16pt;">
                      "As OEI Group, we possess strong confidence in Worldwide Cargo Market ,
                     under conducting aggressive sales promotion and development by experienced 
                     Cargo Sales Executives and gaining remarkable credit and business relation 
                     with many cargo agents".
                     </p>
-                    <p style="padding:20px;"></p>
+                    <p style="padding:10px;"></p>
+                    <img src="img/line.png"  width="150" height="30">
+                    <p style="padding:30px;"></p>
             </div>
             
             <div class="col-xs-12 col-sm-7 col-sm-push-3">
@@ -224,6 +231,10 @@
     
     <div id="network" class="container" style="background-color:transparent;">
         <div class="row rowContainer">
+            <div class="col-xs-12 col-sm-7 col-sm-push-3 text-center">
+                <center><h1>OEI International</h1></center>
+            </div>
+            
             <img src="img/world.jpg" style="height:inherit; width:inherit;">
         </div>
 <!--
@@ -430,6 +441,18 @@
             });
     });
     
+    
+    
+    $('#learnmorebutton').click(function(){
+            $('.visible').removeClass('visible')
+                            .hide('slide', {direction: 'left'}, 300);
+            $('#about').addClass('visible')
+                            .delay(300)
+                            .show('slide', {direction: 'right'}, 300); 
+    });
+    
+    
+    
     $('.fa-circle-thin, .fa-circle').click(function(){
         
             if ($(this).hasClass('fa-circle')){
@@ -488,9 +511,7 @@
             var tablist =  ['home','about','services','network','tracking','contact'];
             
             var activeIndex = tablist.indexOf($('.visible').attr('id'));
-            
-            console.log()
-            
+                        
             if (activeIndex < tablist.indexOf(id)){
                     $('.visible').removeClass('visible')
                             .hide('slide', {direction: 'left'}, 300);
@@ -525,6 +546,7 @@
 //                   }
 //           }); 
 //        });
+    
     
     
     //CONTACT
