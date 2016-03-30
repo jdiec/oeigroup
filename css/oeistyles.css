@@ -3,6 +3,10 @@ html, body{
     
 }
 
+#siteWrapper{
+    overflow-x: hidden;
+}
+
 body:before{
       background: url('../img/beach2.jpg') no-repeat center center;
 }
