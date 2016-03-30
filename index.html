@@ -335,7 +335,7 @@
                         </p>
                         </address>
             
-                        <center><a id="email" href="mailto:EricC@oeigroup.com">EricC@oeigroup.com</a></center>
+                        <center><a id="emaillink" href="mailto:EricC@oeigroup.com">EricC@oeigroup.com</a></center>
             
                 <p style="padding:20px;"></p>
                     <svg class="divider" width="100%" height="5" style="margin:auto;">
@@ -446,6 +446,7 @@
     $('#learnmorebutton').click(function(){
             $('.visible').removeClass('visible')
                             .hide('slide', {direction: 'left'}, 300);
+            $('#abouttab').addClass('active');
             $('#about').addClass('visible')
                             .delay(300)
                             .show('slide', {direction: 'right'}, 300); 
@@ -498,6 +499,7 @@
     
     //NAVIGATION LINKS
         $('.navbar-header a , #myNavbar .nav-pills li').click(function(){
+            $('.active').removeClass('active');
             $('.activeTab').removeClass('activeTab');
             $(this).find('a').addClass('activeTab');
 
